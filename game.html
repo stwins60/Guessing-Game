@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<div id="container-1">
+    <body id="bg">
+        <nav>
+            <a href="login.html">Logout</a>
+        </nav>
+        <h1>Guessing game</h1>
+        <form id="FormID" method="POST" action="#">
+            <label>Enter a number between 1-100 </label><br>
+            <input type="text" id="number" name="number" /><br>
+
+            <input type="button" id="submitBtn" value="Guess" onclick="Guess()" /><br>
+            <input type="button" id="resetBtn" value="Reset" onclick="Reset()" />
+        </form>
+    </body>
+</div>
+
+</html>
