@@ -1,4 +1,4 @@
-let attempts = 10;
+let attempts = 5;
 let trials = 3;
 let randNum = Math.floor(Math.random() * 100) + 1;
 
@@ -9,7 +9,7 @@ function onClick() {
 
     if (username === "admin" && password === "admin") {
         alert("login Successful");
-        window.location = "game.html";
+        window.location = "/game";
         return false;
     }
     else {
@@ -54,7 +54,7 @@ function Guess() {
             Reset();
         }
         if (attempts === 0) {
-            alert("Game Over, better luck next time");
+            alert("Game Over, better luck next time. The number was " + randNum);
             bg.style.backgroundColor = 'red';
             document.getElementById("number").disabled = true;
             document.getElementById("submitBtn").disabled = true;
